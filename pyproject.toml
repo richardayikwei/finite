@@ -10,6 +10,7 @@ dependencies = [
 
 [tool.commitizen]
 name = "cz_conventional_commits"
+version = "0.2.0"
 version_fies = ["pyproject.toml:version"]
 update_changelog_on_bump = true
 changelog_file = "CHANGELOG.md"
