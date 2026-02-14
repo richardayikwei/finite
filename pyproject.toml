@@ -1,9 +1,14 @@
 [project]
 name = "finite"
 version = "0.1.0"
-description = "Add your description here"
+description = "Generates a random password. The password is unique can can never be generated again."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "commitizen>=4.13.7",
 ]
+[tool.commitizen]
+name = "cz_conventional_commits"
+version_fies = ["pyproject.toml:version"]
+update_changelog_on_bump = true
+changelog_file = "CHANGELOG.md"
