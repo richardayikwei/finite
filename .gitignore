@@ -1,0 +1,15 @@
+# Vim backup files
+*~
+*.swp
+*.swo
+*.swx
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
