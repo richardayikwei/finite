@@ -5,7 +5,7 @@ class InputTooSmallError(Exception):
     '''Raised when the input value is less than 10'''
     pass
 
-def password_generator(pass_len=10):
+def password_engine(pass_len=10):
     # Sources of data
     letters = string.ascii_letters
     numbers = string.digits

@@ -16,3 +16,5 @@ version_fies = ["pyproject.toml:version"]
 update_changelog_on_bump = true
 changelog_file = "CHANGELOG.md"
 
+[tool.pytest]
+addopts = ["--import-mode=importlib"]
