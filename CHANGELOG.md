@@ -1,3 +1,9 @@
+## 0.2.1 (2026-02-15)
+
+### Refactor
+
+- **password_generator.py**: add logic to detect when password length is less than 10
+
 ## 0.2.0 (2026-02-14)
 
 ### Feat
