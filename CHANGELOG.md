@@ -1,3 +1,9 @@
+## 0.2.2 (2026-02-15)
+
+### Refactor
+
+- **password_generator.py**: change name of function from password_generator to password_engine
+
 ## 0.2.1 (2026-02-15)
 
 ### Refactor
