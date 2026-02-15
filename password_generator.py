@@ -14,12 +14,10 @@ def password_generator(pass_len=10):
     # Combile into one string
     letters_numbers = letters + numbers + symbols
     
-   # if pass_len < 10:
-    #    raise 
-    password = random.choices(letters_numbers, k=75)
+    if pass_len < 10:
+        raise InputTooSmallError('Password length should be greater than 9')
+
+    password = random.choices(letters_numbers, k=pass_len)
 
     return ''.join(password)
-
-if __name__ == '__main__':
-    print(password_generator())
 
