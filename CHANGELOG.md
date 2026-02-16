@@ -1,3 +1,9 @@
+## 0.4.0 (2026-02-16)
+
+### Feat
+
+- **test_password_generator.py**: add test for string and empty inputs
+
 ## 0.3.0 (2026-02-16)
 
 ### Feat
