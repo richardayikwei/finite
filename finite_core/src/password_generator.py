@@ -5,7 +5,7 @@ class InputTooSmallError(Exception):
     '''Raised when the input value is less than 10'''
     pass
 
-def password_engine(pass_len=10):
+def password_engine(pass_len):
     # Sources of data
     letters = string.ascii_letters
     numbers = string.digits
@@ -23,4 +23,5 @@ def password_engine(pass_len=10):
     password = random.choices(letters_numbers, k=pass_len)
 
     return ''.join(password)
+
 

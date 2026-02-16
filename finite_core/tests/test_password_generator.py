@@ -9,3 +9,11 @@ class TestErrors:
     def test_input_is_a_float_error(self):
         with pytest.raises(TypeError):
             password_engine(10.5)
+
+    def test_input_is_a_str_error(self):
+        with pytest.raises(TypeError):
+            password_engine('a')
+
+    def test_input_is_empty_error(self):
+        with pytest.raises(TypeError):
+            password_engine()
