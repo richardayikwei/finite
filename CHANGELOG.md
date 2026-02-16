@@ -1,3 +1,13 @@
+## 0.3.0 (2026-02-16)
+
+### Feat
+
+- **password_generator.py**: add handling for float input
+
+### Refactor
+
+- **src,test**: change folder structure to make imports possible
+
 ## 0.2.2 (2026-02-15)
 
 ### Refactor
