@@ -1,3 +1,11 @@
+## 0.5.0 (2026-02-17)
+
+### Fix
+
+- **pyproject.toml**: manually change version to 0.4.3 in accordance to error msg
+- **pyproject.toml**: correct spelling mistake that causing bumping failure
+- **pyproject.toml**: fix the config for bumping versions
+
 ## 0.4.1 (2026-02-17)
 
 ### Refactor
