@@ -1,2 +1,0 @@
-commitizen>=4.13.7
-pytest>=9.0.2

@@ -1,4 +1,4 @@
-from password_generator import password_engine, InputTooSmallError
+from app.password_generator import password_engine, InputTooSmallError
 import pytest
 
 class TestErrors:
