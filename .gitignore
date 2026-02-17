@@ -13,3 +13,10 @@ __pycache__/
 # Virtual environments
 venv/
 .env/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
