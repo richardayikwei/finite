@@ -1,3 +1,9 @@
+## 0.5.1 (2026-02-17)
+
+### Refactor
+
+- **pyproject.toml**: remove second version variable
+
 ## 0.5.0 (2026-02-17)
 
 ### Fix
