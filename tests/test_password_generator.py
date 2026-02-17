@@ -1,4 +1,4 @@
-from finite_core.src import password_engine, InputTooSmallError
+from password_generator import password_engine, InputTooSmallError
 import pytest
 
 class TestErrors:

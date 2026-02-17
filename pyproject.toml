@@ -18,3 +18,4 @@ changelog_file = "CHANGELOG.md"
 
 [tool.pytest]
 addopts = ["--import-mode=importlib"]
+pythonpath = ["src"]

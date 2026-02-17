@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: finite
+Version: 0.1.0
+Summary: Generates a random password. The password is unique can can never be generated again.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: commitizen>=4.13.7
+Requires-Dist: pytest>=9.0.2
+Dynamic: license-file
+
+# Finite
+Generates a random password. The password is unique can can never be generated again. 
