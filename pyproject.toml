@@ -1,6 +1,6 @@
 [project]
 name = "finite"
-version = "0.4.1"
+version = "0.4.3"
 description = "Generates a random password. The password is unique can can never be generated again."
 readme = "README.md"
 requires-python = ">=3.11"
