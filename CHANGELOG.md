@@ -1,3 +1,13 @@
+## 0.6.0 (2026-02-17)
+
+### Feat
+
+- **counter.py**: add counter that will act as a decorator
+
+### Refactor
+
+- **src**: redo folder structure
+
 ## 0.5.1 (2026-02-17)
 
 ### Refactor
