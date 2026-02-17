@@ -1,3 +1,9 @@
+## 0.4.1 (2026-02-17)
+
+### Refactor
+
+- **src,-tests**: change folder structure to adhare to deployment standards
+
 ## 0.4.0 (2026-02-16)
 
 ### Feat
