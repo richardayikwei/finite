@@ -1,3 +1,9 @@
+## 0.7.0 (2026-02-18)
+
+### Feat
+
+- **ci.yml**: add continous integretion
+
 ## 0.6.0 (2026-02-17)
 
 ### Feat
