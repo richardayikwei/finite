@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+## 0.8.0 (2026-02-20)
+
+### Feat
+
+- **main.py**: add fastapi routing
+
 ## 0.7.0 (2026-02-20)
 
 ### Feat
