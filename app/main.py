@@ -8,7 +8,7 @@ async def start_page():
     return { "passwords_generated" : 12345}
 
 @app.get("/generate/")
-async def generate(k:int):
+async def generate(k:int | float):
     try:
         result = password_engine(k)
         return {"result" : result}
