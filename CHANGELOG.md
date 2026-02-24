@@ -1,4 +1,14 @@
 <<<<<<< HEAD
+## 0.9.3 (2026-02-24)
+
+### Fix
+
+- **main.py,counter.py**: add wraps from functools to preserve the metadata of the function
+
+### Refactor
+
+- **main.py**: replace hardcoded password count with function and add increment count as function
+
 ## 0.9.2 (2026-02-24)
 
 ### Refactor
