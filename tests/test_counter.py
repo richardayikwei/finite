@@ -2,6 +2,9 @@ from app.counter import increment_count_manager, get_count_manager, get_connecti
 import pytest
 import os
 import psycopg2
+from dotenv import load_dotenv
+
+load_dotenv()
 
 @increment_count_manager(database_name = "test_password_counter")
 def dolittle():
