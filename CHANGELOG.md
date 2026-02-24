@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+## 0.9.2 (2026-02-24)
+
+### Refactor
+
+- **counter.py**: add actual string to getenv to help solve ci/cd error
+- **test_counter.py**: add load dotenv to script
+
 ## 0.9.1 (2026-02-24)
 
 ### Refactor
