@@ -1,8 +1,41 @@
+<<<<<<< HEAD
+## 0.9.1 (2026-02-24)
+
+### Refactor
+
+- **test_counter.py**: add increment count manager test
+- **counter.py**: change how decorator behaves
+
+## 0.9.0 (2026-02-23)
+
+### Feat
+
+- **test_counter.py**: add test for connection to database
+
+### Refactor
+
+- **counter.py**: add context manager to ensure connection closes
+- **counter.py**: add load .env variable and pass connection as function to code
+- **counter.py**: switch counter to postgress database and seperate counter into increment and get count mangers
+
+## 0.8.0 (2026-02-20)
+
+### Feat
+
+- **main.py**: add fastapi routing
+
+## 0.7.0 (2026-02-20)
+
+### Feat
+
+- **main.py**: add fastapi routing
+=======
 ## 0.7.0 (2026-02-18)
 
 ### Feat
 
 - **ci.yml**: add continous integretion
+>>>>>>> feature/github_actions
 
 ## 0.6.0 (2026-02-17)
 
