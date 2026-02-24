@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+## 0.9.1 (2026-02-24)
+
+### Refactor
+
+- **test_counter.py**: add increment count manager test
+- **counter.py**: change how decorator behaves
+
 ## 0.9.0 (2026-02-23)
 
 ### Feat
