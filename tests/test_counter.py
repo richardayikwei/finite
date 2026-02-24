@@ -3,6 +3,9 @@ import pytest
 import os
 import psycopg2
 
+@increment_count_manager(database_name = "test_password_counter")
+def dolittle():
+    pass
 
 class TestDabaseChanges:
     @pytest.fixture(scope="class")
@@ -17,14 +20,11 @@ class TestDabaseChanges:
         conn.commit()
         cur.close()
 
-    def dolittle(self):
-        pass
-
     def test_get_count_manager(self, conn):
         self.reset_counter(conn)
         assert get_count_manager(connect_info=conn, database_name="test_password_counter") == 0
 
     def test_increment_count_manager(self, conn):
         self.reset_counter(conn)
-        increment_count_manager(self.dolittle,connect_info=conn, database_name = "test_password_counter")
-        # assert get_count_manager(connect_info=conn, database_name="test_password_counter") == 1
+        dolittle()
+        assert get_count_manager(connect_info=conn, database_name="test_password_counter") == 1

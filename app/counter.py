@@ -25,9 +25,3 @@ def get_count_manager(connect_info = get_connection(), database_name="password_c
     with connect_info.cursor() as cur:
         cur.execute(query, (1,))
         return cur.fetchone()[0]
-
-@increment_count_manager
-def mee(a):
-    pass
-
-mee(1)
