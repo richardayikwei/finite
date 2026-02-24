@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def get_connection(database = "DATABASE_URL"):
-    conn = psycopg2.connect(os.getenv(database))
+def get_connection():
+    conn = psycopg2.connect(os.getenv("DATABASE_URL"))
     return conn
 
 def increment_count_manager(connect_info = get_connection() , database_name="password_counter"):
