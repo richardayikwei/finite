@@ -20,7 +20,7 @@ class PasswordRequest(BaseModel):
     length: int
     captcha_token: str
 
-@app.get("/")
+@app.get("/count")
 async def start_page():
     return { "passwords_generated" : get_count_manager()}
 
