@@ -1,7 +1,5 @@
 from app.counter import increment_count_manager, get_count_manager, get_connection
 import pytest
-import os
-import psycopg2
 from dotenv import load_dotenv
 
 load_dotenv()
