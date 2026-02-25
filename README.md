@@ -50,5 +50,5 @@ uv run ruff check . --fix
 ## Documentation
 
 ```
-uv run pyment -e -o numpydoc app/
+uv run pyment -w -o numpydoc app/
 ```
