@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+## 0.10.0 (2026-02-25)
+
+### Feat
+
+- **main.py,captcha.py**: add captcha and middle ware to backend
+
 ## 0.9.5 (2026-02-25)
 
 ### Refactor
