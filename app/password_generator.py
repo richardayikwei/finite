@@ -2,10 +2,21 @@ import random
 import string
 
 class InputTooSmallError(Exception):
-    '''Raised when the input value is less than 10'''
+    """ """
     pass
 
 def password_engine(pass_len:int):
+    """
+    Generate password based on length of characters
+    Parameters
+    ----------
+    pass_len:int : length of password characters
+        
+
+    Returns
+    -------
+    str: Password
+    """
     # Sources of data
     letters = string.ascii_letters
     numbers = string.digits
@@ -23,5 +34,3 @@ def password_engine(pass_len:int):
     password = random.choices(letters_numbers, k=pass_len)
 
     return ''.join(password)
-
-
