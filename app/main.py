@@ -1,10 +1,6 @@
-from fastapi import FastAPI, HTTPException
-from app.password_generator import password_engine
-from app.counter import get_count_manager, increment_count_manager
+from app.routers import passwords
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from app.captcha import verify_captcha
-
+from fastapi import FastAPI
 
 app = FastAPI()
 
@@ -16,24 +12,4 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class PasswordRequest(BaseModel):
-    length: int
-    captcha_token: str
-
-@app.get("/count")
-async def start_page():
-    return { "passwords_generated" : get_count_manager()}
-
-@app.post("/generate")
-@increment_count_manager()
-async def generate(data: PasswordRequest):
-    try:
-        password = password_engine(data.length)
-        captcha_valid = await verify_captcha(data.captcha_token)
-
-        if not captcha_valid:
-            return {"status": "robot"}
-
-        return {"status": "human", "password": password}
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+app.include_router(passwords.router)
