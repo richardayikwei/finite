@@ -2,16 +2,11 @@ from fastapi import APIRouter
 from fastapi import HTTPException
 from app.password_generator import password_engine
 from app.counter import get_count_manager, increment_count_manager
-
-from pydantic import BaseModel
+from app.schemas import PasswordRequest
 from app.captcha import verify_captcha
 
 router = APIRouter()
 
-
-class PasswordRequest(BaseModel):
-    length: int
-    captcha_token: str
 
 @router.get("/count")
 async def start_page():
