@@ -1,24 +1,14 @@
-import psycopg2
-import os
-from dotenv import load_dotenv
 from functools import wraps
+from app.db import conn
+from psycopg2 import sql
 
-load_dotenv()
-
-def get_connection():
-    """
-    Open connection to database 
-    """
-    conn = psycopg2.connect(os.getenv("DATABASE_URL"))
-    return conn
-
-def increment_count_manager(connect_info = get_connection() , database_name="password_counter"):
+def increment_count_manager(connect_info = conn , database_name="password_counter"):
     """
     connect to database and to specific table
     Parameters
     ----------
     connect_info :
-         (Default value = get_connection()) connection function to database
+         (Default value = conn) connection to database
     database_name :
          (Default value = "password_counter") name of database table
 
@@ -53,7 +43,9 @@ def increment_count_manager(connect_info = get_connection() , database_name="pas
             -------
 
             """
-            query = f'UPDATE {database_name} SET clicks = clicks + 1 WHERE id = %s;'
+            query = sql.SQL('UPDATE {} SET clicks = clicks + 1 WHERE id = %s').format(
+                sql.Identifier(database_name)
+            )
             with connect_info.cursor() as cur:
                 cur.execute(query, (1,))
                 connect_info.commit()  
@@ -62,13 +54,13 @@ def increment_count_manager(connect_info = get_connection() , database_name="pas
         return proxy
     return decorator
 
-def get_count_manager(connect_info = get_connection(), database_name="password_counter"):
+def get_count_manager(connect_info = conn, database_name="password_counter"):
     """
     connect to database and specific table and retrieve count of passwords generated
     Parameters
     ----------
     connect_info :
-         (Default value = get_connection()) connection function to database
+         (Default value = conn) connection to database
     database_name :
          (Default value = "password_counter") name of database table
 
@@ -76,7 +68,9 @@ def get_count_manager(connect_info = get_connection(), database_name="password_c
     -------
     Count of passwords generated from database
     """
-    query = f'SELECT clicks FROM {database_name} WHERE id = %s;'
+    query = sql.SQL('SELECT clicks FROM {} WHERE id = %s').format(
+        sql.Identifier(database_name)
+    )
     with connect_info.cursor() as cur:
         cur.execute(query, (1,))
         return cur.fetchone()[0]
