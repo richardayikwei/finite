@@ -1,4 +1,5 @@
-from app.counter import increment_count_manager, get_count_manager, get_connection
+from app.crud.counter import increment_count_manager, get_count_manager
+from app.db import conn
 import pytest
 from dotenv import load_dotenv
 
@@ -11,7 +12,7 @@ def dolittle():
 class TestDabaseChanges:
     @pytest.fixture(scope="class")
     def conn(self):
-        connection = get_connection()
+        connection = conn
         yield connection
         connection.close()
 

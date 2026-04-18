@@ -1,4 +1,17 @@
-<<<<<<< HEAD
+## 0.10.2 (2026-04-18)
+
+### Refactor
+
+- **test_counter.py,passwords.py,counter.py**: change position of crud script to reflect engineering standards
+
+## 0.10.1 (2026-04-18)
+
+### Refactor
+
+- **counter.py,test_counter.py**: deal with sql injection and use new db import
+- **schemas.py,passwords.py**: seperate schema from route
+- **main.py,password.py**: seperate route logic from main
+
 ## 0.10.0 (2026-02-25)
 
 ### Feat
@@ -60,13 +73,11 @@
 ### Feat
 
 - **main.py**: add fastapi routing
-=======
 ## 0.7.0 (2026-02-18)
 
 ### Feat
 
 - **ci.yml**: add continous integretion
->>>>>>> feature/github_actions
 
 ## 0.6.0 (2026-02-17)
 
