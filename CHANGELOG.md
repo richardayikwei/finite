@@ -1,4 +1,12 @@
 <<<<<<< HEAD
+## 0.10.1 (2026-04-18)
+
+### Refactor
+
+- **counter.py,test_counter.py**: deal with sql injection and use new db import
+- **schemas.py,passwords.py**: seperate schema from route
+- **main.py,password.py**: seperate route logic from main
+
 ## 0.10.0 (2026-02-25)
 
 ### Feat
