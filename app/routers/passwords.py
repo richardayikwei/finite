@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from fastapi import HTTPException
 from app.password_generator import password_engine
-from app.counter import get_count_manager, increment_count_manager
+from app.crud.counter import get_count_manager, increment_count_manager
 from app.schemas import PasswordRequest
 from app.captcha import verify_captcha
 

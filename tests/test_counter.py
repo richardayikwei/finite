@@ -1,4 +1,4 @@
-from app.counter import increment_count_manager, get_count_manager
+from app.crud.counter import increment_count_manager, get_count_manager
 from app.db import conn
 import pytest
 from dotenv import load_dotenv

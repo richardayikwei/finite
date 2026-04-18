@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## 0.10.1 (2026-04-18)
 
 ### Refactor
@@ -68,13 +67,11 @@
 ### Feat
 
 - **main.py**: add fastapi routing
-=======
 ## 0.7.0 (2026-02-18)
 
 ### Feat
 
 - **ci.yml**: add continous integretion
->>>>>>> feature/github_actions
 
 ## 0.6.0 (2026-02-17)
 
