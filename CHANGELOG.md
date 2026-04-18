@@ -1,3 +1,9 @@
+## 0.10.2 (2026-04-18)
+
+### Refactor
+
+- **test_counter.py,passwords.py,counter.py**: change position of crud script to reflect engineering standards
+
 ## 0.10.1 (2026-04-18)
 
 ### Refactor
