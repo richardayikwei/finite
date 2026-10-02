@@ -3,7 +3,7 @@ name = "finite"
 version = "0.10.2"
 description = "Generates a random password. The password is unique can can never be generated again."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.14"
 dependencies = [
     "fastapi>=0.129.0",
     "httpx>=0.28.1",
